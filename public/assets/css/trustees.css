@@ -1,0 +1,52 @@
+.trustees .trustees-team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trustees-page-section .page-section-title h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.trustees-page-section .trustees-subtext {
+    max-width: 960px;
+    font-size: 18px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.trustees .trustees-team .team-member .trustee-item .trustee-role {
+    color: #cecece;
+}
+
+/* .trustees-page-section .context {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trustees-page-section p {
+    font-size: 18px;
+    width: 80%;
+} */
+
+@media (max-width: 991px) {
+    .trustees .trustees-team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .trustees .trustees-team {
+        gap: 10px;
+    }
+
+    .trustees .trustees-team .team-member .trustee-item .trustee-name {
+        font-size: 13px;
+    }
+
+    .trustees .trustees-team .team-member .trustee-item .trustee-role {
+        font-size: 11px;
+    }
+}
